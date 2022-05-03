@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Challenge Alura ONE</title>
+</head>
+<body class="body-principal">
+    <main class="principal-div">
+
+        <header>
+            <img src="img/logo.svg" alt="logo" class="logo">
+        </header>
+
+        <form class="div-textarea">
+            <!-- Utiliazmos oninput para llamar a la función que valida los caracteres -->
+            <textarea name="texto-area" id="texto-entrada"  class="texto-area" placeholder="Ingrese el texto aquí" oninput="validarTextarea(this)"></textarea>
+        </form>
+
+        <div class="controles">
+          <div class="advertencia">
+            <span class="icono-info"></span><small><img src="img/exclamation.png" alt="imagen-exclamación">Solo letras minúsculas y sin acentos</small>
+          </div>
+
+          <div class="button">
+            <input type="button" class="button-codificar" value="Encriptar" />
+            <input type="button" class="button-decodificar" value="Desencriptar" />
+          </div>
+        </div>
+
+    </main>
+
+    <section class="barra-lateral">
+      <div id="info" class="info">
+  
+        <div class="info-img ">
+          <img src="img/muñeco.png" />
+        </div>
+  
+        <div class="info-txt">
+          <strong>Ningún mensaje fue encontrado</strong><br />
+          <span> Ingresa el texto que desees codificar o decodificar</span>
+        </div>
+
+      </div>
+      
+      <div id="salida" class="salida-texto"></div>
+      <div >
+        <input id="copiar" type="button" class="button-copiar" value="copiar" hidden/>
+      </div>
+    
+
+      
+
+    </section>
+    <script src="js/app.js"></script>
+</body>
+</html>
