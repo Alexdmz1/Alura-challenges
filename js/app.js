@@ -14,20 +14,25 @@ bottonEncriptar.addEventListener("click",function(event){
 
 });
 
+
+
+// Botón desencriptar
 var bottonDesencriptar = document.querySelector(".button-decodificar");
-var info1 = document.querySelector("#info");
 bottonDesencriptar.addEventListener("click",function(event){
     event.preventDefault();
     visible();
     desencriptar();
-    info1.style.display = "none";
+    info.style.display = "none";
     salida.style.display = "block";
     
 
 });
 
-var bottonCopiar = document.querySelector("#copiar");
+// Área donde se mostrara el texto encriptado
 var salida = document.querySelector("#salida");
+
+// Botón copiar
+var bottonCopiar = document.querySelector("#copiar");
 bottonCopiar.addEventListener("click",function(event){
     event.preventDefault();
 
@@ -46,7 +51,7 @@ bottonCopiar.addEventListener("click",function(event){
     // Poner el cursor listo en el textarea para escribir
     borrarcaracter.focus();
     invisible();
-    info1.style.display = "block";
+    info.style.display = "block";
     salida.style.display="none";
 
 
